@@ -4,10 +4,6 @@
 calendar:
     push    {lr}    @ リンクレジスタの退避
 
-    mov     r7, #13
-    svc     #0
-    bl      print
-
     bl      date
     bl      wday
 

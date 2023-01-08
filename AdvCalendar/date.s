@@ -2,11 +2,15 @@
     .global date
     .type   date, %function
 date:
-    push    {r1, lr}
+    push    {r0, r1, r2, lr}
     ldr     r1, =msg
-    add     r1, r1, #20
+    mov     r2, #10
+    mul     r2, r0, r2
+    add     r1, r1, r2
+    sub     r1, r1, #10
     bl      print
-    pop     {r1, lr}
+
+    pop     {r0, r1, r2, lr}
     bx      lr
 
 .section    .data

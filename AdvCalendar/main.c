@@ -1,10 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-extern void calendar(int, int);
+// extern void calendar(int, int);
+extern void test(int argc, char *argv[]);
 
 int main(int argc, char *argv[])
 {
+    test(argc, argv);
+    /*
     int month, year;
 
     switch (argc)
@@ -20,6 +23,6 @@ int main(int argc, char *argv[])
     default:
         printf("Usage: ./cal [month] year\n");
     }
-
+    */
     return 0;
 }
