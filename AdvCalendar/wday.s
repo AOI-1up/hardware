@@ -1,12 +1,14 @@
+/*------------------------------------------*
+* wday : 曜日をコマンドラインへ出力
+*-------------------------------------------*/
     .text
     .global wday
     .type   wday, %function
 wday:
-    mov     r0, #1
+    push    {r1, lr}
     ldr     r1, =msg
-    mov     r2, #22
-    mov     r7, #4
-    svc     #0
+    bl      print
+    pop     {r1, lr}
     bx      lr
 
 .section    .data

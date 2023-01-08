@@ -6,9 +6,8 @@
     .global print
     .type   print, %function
 print:
-    push    {r0, r2, r7}
+    push    {r0, r1, r2, r7}
     mov     r2, #0
-
 loop:
     /* 文字列の長さをカウント */
     ldrb    r0, [r1, r2]
@@ -23,5 +22,5 @@ loopend:
     mov     r7, #4
     svc     #0
 
-    pop     {r0, r2, r7}
+    pop     {r0, r1, r2, r7}
     bx      lr
