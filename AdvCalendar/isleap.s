@@ -2,7 +2,7 @@
     .global isleap
     .type   isleap, %function
 isleap:
-    @ 使用するレジスタの退避
+    /* 使用するレジスタを退避 */ 
     push    {r4}
 
     @ うるう年を計算する (平年: 0, うるう年: 1)
@@ -46,6 +46,6 @@ isleap:
     @ r0 + 28 を求める
     add     r0, r0, #28
 
-    @ 使用したレジスタの復帰
+    /* 使用したレジスタを復帰 */ 
     pop     {r4}
     bx      lr
