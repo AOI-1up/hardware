@@ -28,7 +28,7 @@ Su Mo Tu We Th Fr Sa
 
 ### AdvCalendar
 ```
-a$ cc -mcpu=cortex-a15 -o cal main.c calendar.s date.c wday.s zellar.s montlen.s isleap.s print.s
+$ cc -mcpu=cortex-a15 -o cal main.c calendar.s date.c wday.s zellar.s montlen.s isleap.s print.s
 $ ./cal 1 2023
 January 2023
 Mo Tu We Th Fr Sa Su
