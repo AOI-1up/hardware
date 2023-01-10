@@ -57,6 +57,7 @@ zellar:
 
     cmp     r0, #0      @ 曜日番号を調整
     addeq   r0, r0, #7
+    sub     r0, r0, #1
 
     /* 使用したレジスタを復帰 */
     pop     {r1, r2, r3, r4, r5, r6, r7, r8}

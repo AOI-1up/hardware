@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-extern void calendar(int, int, char);
-// extern int zellar(int, int, int);
+extern void calendar(int, int, char *);
+
 int main(int argc, char **argv)
 {
     int month, year;
@@ -17,8 +17,6 @@ int main(int argc, char **argv)
         month = atoi(argv[1]);
         year = atoi(argv[2]);
         calendar(year, month, day);
-        // int k = zellar(year, month, 1);
-        // printf("%d\n", k);
         break;
     default:
         printf("Usage: ./cal [month] year\n");
