@@ -47,7 +47,7 @@ isleap:
     sub     r0, r1, r2
     add     r0, r0, r3
 
-    @ r0 + 28 を求める
-    add     r0, r0, #28
+    @ r0 + 29 を求める
+    add     r0, r0, #29
 
     bx      lr

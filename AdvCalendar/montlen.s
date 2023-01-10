@@ -14,7 +14,7 @@ monthlen:
     
     /* 1月の場合 */ 
     cmp     r1, #1
-    moveq   r0, #31
+    moveq   r0, #32
 
     /* 2月の場合 */
     cmp     r1, #2
@@ -22,43 +22,43 @@ monthlen:
 
     /* 3月の場合 */
     cmp     r1, #3
-    moveq   r0, #31
+    moveq   r0, #32
 
     /* 4月の場合 */ 
     cmp     r1, #4
-    moveq   r0, #30
+    moveq   r0, #31
 
     /* 5月の場合 */ 
     cmp     r1, #5
-    moveq   r0, #31
+    moveq   r0, #32
 
     /* 6月の場合 */ 
     cmp     r1, #6
-    moveq   r0, #30
+    moveq   r0, #31
 
     /* 7月の場合 */ 
     cmp     r1, #7
-    moveq   r0, #31
+    moveq   r0, #32
 
     /* 8月の場合 */ 
     cmp     r1, #8
-    moveq   r0, #31
+    moveq   r0, #32
 
     /* 9月の場合 */ 
     cmp     r1, #9
-    moveq   r0, #30
+    moveq   r0, #31
 
     /* 10月の場合 */ 
     cmp     r1, #10
-    moveq   r0, #31
+    moveq   r0, #32
 
     /* 11月の場合 */ 
     cmp     r1, #11
-    moveq   r0, #30
+    moveq   r0, #31
 
     /* 12月の場合 */ 
     cmp     r1, #12
-    moveq   r0, #31
+    moveq   r0, #32
 
     /* 使用したレジスタを復帰 */
     pop     {r1, r2, r3, r4, lr}
