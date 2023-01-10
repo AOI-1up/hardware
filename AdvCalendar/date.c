@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <string.h>
 
-void date(int month, int year)
+void date(int year, int month)
 {
     char *ar[] = {
         "January",

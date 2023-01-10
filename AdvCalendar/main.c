@@ -1,11 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-extern void calendar(int, int);
-extern int zellar(int, int, int);
+extern void calendar(int, int, char);
+// extern int zellar(int, int, int);
 int main(int argc, char **argv)
 {
     int month, year;
+    char day[BUFSIZ];
 
     switch (argc)
     {
@@ -15,9 +16,9 @@ int main(int argc, char **argv)
     case 3:
         month = atoi(argv[1]);
         year = atoi(argv[2]);
-        calendar(month, year);
-        int k = zellar(year, month, 1);
-        printf("%d\n", k);
+        calendar(year, month, day);
+        // int k = zellar(year, month, 1);
+        // printf("%d\n", k);
         break;
     default:
         printf("Usage: ./cal [month] year\n");
